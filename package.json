@@ -1,0 +1,31 @@
+{
+  "name": "ai-text-summarization-agent",
+  "version": "1.0.0",
+  "description": "AI-powered text summarization agent using Alith library and Groq API",
+  "main": "agent_alith.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && npm run execute",
+    "build": "tsc agent_alith.ts --target ES2022 --module NodeNext --moduleResolution nodeNext --skipLibCheck --esModuleInterop",
+    "execute": "node agent_alith.js",
+    "clean": "rm -f agent_alith.js"
+  },
+  "keywords": [
+    "ai",
+    "text-summarization", 
+    "typescript",
+    "groq",
+    "llama",
+    "alith"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "alith": "^0.12.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
